@@ -5,6 +5,6 @@ def my_collect(collection)
     x = yield collection[i]
     i += 1
   end
-  collection(&x)
+  collection(&:x)
 end
 
